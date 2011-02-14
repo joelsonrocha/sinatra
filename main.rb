@@ -10,7 +10,7 @@ require 'dm-mysql-adapter'
 require 'dm-migrations'
 require 'dm-validations'
 
-DataMapper.setup(:default, 'mysql://localhost/the_database_name')
+DataMapper.setup(:default, 'mysql://root:root@localhost/blog_development')
 
 DataMapper.auto_migrate!
 
